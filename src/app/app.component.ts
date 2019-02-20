@@ -19,7 +19,10 @@ export class AppComponent {
   /**
    * creates a new reminder based on the chore and date input
    */
-  addChore = (newChore: string, when: string) => this.model.items.push(new reMind(newChore, when, false));
-
+  //addChore = (newChore: string, when: string) => this.model.items.push(new reMind(newChore, when, false));
+  addChore(newChore: string, when: string) {
+    if(newChore != "" && when != "")
+      return this.model.items.push(new reMind(newChore, when, false));
+  }
 
 }

@@ -1,7 +1,7 @@
 <h3 class='row bg-danger text-white p-3'> {{title}} </h3>
 <div class="my-1">
-    <input  class="form-control col-sm-6 col-md-4" placeholder="New chore" #newChore/>
-    <input class="form-control col-sm-6 col-md-4" formControlName="when" placeholder="When" #when/>
+    <input  class="form-control col-sm-6 col-md-4" placeholder="New chore         *required field" #newChore/>
+    <input class="form-control col-sm-6 col-md-4"  placeholder="When              *required field" #when/>
     <button class="btn btn-dark mt-1" (click)="addChore(newChore.value, when.value)">
         Add chore
     </button>
@@ -10,7 +10,7 @@
 <table class="table table-dark table-hover col-sm-6 col-md-4">
   <thead class='bg-primary'>
     <tr>
-      <th>Nr.</th>
+      <th>No.</th>
       <th>Chore</th>
       <th>Time</th>
       <th>Done</th>
